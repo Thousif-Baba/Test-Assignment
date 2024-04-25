@@ -1,0 +1,29 @@
+.event-details-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+.event-details-title {
+    color: #333;
+    font-size: 24px;
+}
+
+.event-details-description {
+    margin-top: 10px;
+}
+
+.event-details-link {
+    color: #069;
+    text-decoration: none;
+}
+
+.event-details-locality {
+    margin-top: 5px;
+}
+
+.event-details-category {
+    margin-top: 5px;
+    font-weight: bold;
+}
