@@ -5,9 +5,15 @@ const app = express()
 
 app.use(express.json())
 
-app.get("/", (req, res) => {
-    res.send("Hello Thousif Baba")
-})
+app.get("/", async (req, res) => {
+    try {
+        const events = await Event.find();
+        res.status(200).json(events);
+    } catch (error) {
+        console.log(error.message);
+        res.status(500).json({ message: error.message });
+    }
+});
 
 app.post("/", async (req, res) => {
     try {
